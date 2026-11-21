@@ -106,7 +106,17 @@
     padding: 0.1em 0.35em;
     white-space: nowrap;
   }
-  .when { margin: 2.75rem 0 0; text-align: center; color: var(--dim); }
+  .motto {
+    margin: 3.25rem auto 0;
+    max-width: 34rem;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.45;
+    text-wrap: balance;
+  }
+  .motto span { color: var(--accent); }
+  .when { margin: 0.9rem 0 0; text-align: center; color: var(--dim); }
   @media (max-width: 26rem) {
     .features { grid-template-columns: 1fr; }
   }
@@ -160,6 +170,7 @@
     </li>
   </ul>
 
+  <p class="motto">Every app in a room of its own. <span>Every door is yours to open.</span></p>
   <p class="when">The first release is planned for December 2026.</p>
 </main>
 </body>
