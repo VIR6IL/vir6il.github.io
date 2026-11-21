@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>vir6il</title>
+<meta name="description" content="vir6il: apps kept apart from each other and from the machine, and a desktop made of them, on Fedora. The first release is planned for December 2026.">
+<link rel="icon" type="image/svg+xml" href="vir6il.svg">
+<style>
+  /* Syncopate (Astigmatic, Apache 2.0: fonts/LICENSE.txt), the wordmark's face. */
+  @font-face {
+    font-family: Syncopate;
+    font-weight: 700;
+    src: url("fonts/Syncopate-Bold.ttf") format("truetype");
+    font-display: swap;
+  }
+  :root {
+    --page: #1e2228;
+    --text: #e6e9ee;
+    --dim: #99a0ac;
+    color-scheme: dark light;
+  }
+  /* The logo turns its fur black in light mode on its own (its own style). */
+  @media (prefers-color-scheme: light) {
+    :root {
+      --page: #f5f6f8;
+      --text: #1e2228;
+      --dim: #5b6270;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--text);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Cantarell, sans-serif;
+    display: grid;
+    place-items: center;
+  }
+  main {
+    max-width: 34rem;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  img { width: 144px; height: 144px; }
+  h1 {
+    font: 700 2rem/1.2 Syncopate, system-ui, sans-serif;
+    letter-spacing: 0.04em;
+    margin: 1rem 0 0.25rem;
+  }
+  .say { color: var(--dim); margin: 0 0 1.75rem; }
+  p { margin: 0.6rem 0; }
+  .dim { color: var(--dim); }
+</style>
+</head>
+<body>
+<main>
+  <img src="vir6il.svg" alt="vir6il's logo" width="144" height="144">
+  <h1>vir6il</h1>
+  <p class="say">say &ldquo;Virgil&rdquo;</p>
+  <p>
+    Apps kept apart from each other and from the machine, working together only through
+    conversations they are allowed, and a desktop made of such apps. On Fedora, and able to seal it:
+    whoever logs in reaches only vir6il.
+  </p>
+  <p class="dim">The first release is planned for December 2026.</p>
+</main>
+</body>
+</html>
